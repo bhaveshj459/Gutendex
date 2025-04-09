@@ -1,0 +1,34 @@
+.genre-card-wrapper {
+    background-color: white;
+    position: relative;
+    display: flex;
+    height: 50px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+  }
+  
+  .genre-card-wrapper:active {
+    border: solid 2px var(--primary_color);
+  }
+  
+  .genre-card-label {
+    font-family: 'Montserat-Regular';
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    width: 100%;
+    color: var(--accent_color_dark);
+  }
+  
+  .genre-card-icon1 {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+  
+  .genre-card-icon2 {
+    padding: 15px;
+  }
+  

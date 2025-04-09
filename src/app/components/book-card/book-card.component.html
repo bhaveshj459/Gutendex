@@ -1,0 +1,5 @@
+<figure role="button" class="book-card">
+    <img class="book-card-cover" [src]="bookCoverUrl" alt={{bookTitle}} (error)="onImageError($event)" />
+    <figcaption class="book-card-title" [title]="bookTitle">{{bookTitle}}</figcaption>
+    <figcaption class="book-card-author" [title]="bookAuthor">{{bookAuthor}}</figcaption>
+</figure>

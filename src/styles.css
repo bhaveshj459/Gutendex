@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary_color: #5e56e7;
+    --secondary_color: #f8f7ff;
+    --accent_color_light: #f0f0f6;
+    --accent_color_medium: #a0a0a0;
+    --accent_color_dark: #333;
+}
+@font-face {
+    font-family: 'Montserat-Regular';
+    src: url(/assets/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Montserat-Semi Bold';
+    src: url(/assets/fonts/Montserrat-SemiBold.ttf) format('truetype');
+}
+body {
+    font-family: 'Montserat-Regular' !important;
+    font-size: 16px !important;
+    height: 100% !important;
+    background-color: var(--secondary_color) !important;
+}
+h1 {
+    font-family: 'Montserat-Semi Bold';
+    font-size: 48px !important;
+    color: var(--primary_color) !important;
+}
+h2 {
+    font-family: 'Montserat-Semi Bold';
+    font-size: 30px !important;
+}
+.centre-div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+<div class="head">
+    <br>
+    <div class="container">
+        <div class="genre-title">
+            <img class="genre-tile-back" [src]="backIconUrl" (click)="goBack()" />
+            <h2 class="genre-title-label">{{genreName}}</h2>
+        </div>
+        <div class="text-box-wrapper">
+            <div role="icon" class="text-box-icon"><img [src]="searchIconUrl" /></div>
+            <input aria-label="search book" class="text-box-input" type="search" [(ngModel)]="searchQuery"
+                placeholder="Search" #searchBox />
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="wrapper">
+    <br>
+    <div class="container">
+        <div class="flex-row">
+            <div *ngFor="let book of books" class="flex-col">
+                <app-book-card [bookCoverUrl]="book.cover" [bookTitle]="book.title" [bookAuthor]="book.authors"
+                    [genreName]="this.genreName" (click)="openBook(book.book_url)"></app-book-card>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="isLoading" class="centre-div" #anchor>
+        <app-loader></app-loader>
+    </div>
+</div>
